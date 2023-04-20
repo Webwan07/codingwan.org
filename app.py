@@ -23,9 +23,9 @@ def precode():
         a,b = st.columns((2,1))
         a.write(v[1])
         b.text(f"Programmed by: {v[2]}")
-        if st.button("Copy code",key=f"precode_key"):
-            pyperclip.copy(thecode)
-            st.success("Code copied to clipboard! Thank you for visiting my site :)")
+      
+
+
     st.write("---")
 
 try:
@@ -133,9 +133,9 @@ if selected_content == option2[0]:
             col1.write(value[1])
         if showAuthor:
             col2.text(f"Programmed by: {value[2]}")
-        if st.button("Copy code",key=f"{title}_key"):
-            pyperclip.copy(value[0])
-            st.success("Code copied to clipboard!")
+       
+
+  
         st.write("---")
         idx += 1
 elif selected_content == option2[1]:
