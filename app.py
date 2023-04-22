@@ -133,9 +133,6 @@ if selected_content == option2[0]:
             col1.write(value[1])
         if showAuthor:
             col2.text(f"Programmed by: {value[2]}")
-       if st.button("Save code",key=f"{title}_key"):
-            pyperclip.copy(value[1])
-            st.success("Code copied to clip board")
   
         st.write("---")
         idx += 1
